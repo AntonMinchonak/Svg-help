@@ -1,0 +1,18 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path id="jija" d="M103 12L188 12L188 97M92 188L12 188L12 108" stroke="#489EDC" stroke-width="2" />
+
+  <animate
+    attributeName="d"
+    href="#jija"
+    dur="2s"
+    repeatCount="indefinite"
+    values="M103 12L188 12L188 12L188 97M92 188L12 188L12 188L12 108;
+M188 12L188 12L188 188L188 188M12 188L12 188L12 12L12 12;
+M188 103L188 188L188 188L103 188M12 103L12 12L12 12L103 12;
+M188 188L188 188L12 188L12 188M12 12L12 12L188 12L188 12;
+M92 188L12 188L12 188L12 108M103 12L188 12L188 12L188 97;
+"
+  />
+
+
+</svg>

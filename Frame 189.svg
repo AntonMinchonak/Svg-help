@@ -1,0 +1,43 @@
+<svg class="suka" width="242" height="242" viewBox="0 0 242 242" fill="none"
+  xmlns="http://www.w3.org/2000/svg">
+  <path d="M59 27V193L153 99V214H184V27" stroke="black" stroke-width="3" id="loh" />
+
+  <animate
+    attributeName="d"
+    href="#loh"
+    values="M59 27V193L153 99V214H184V27;M5 27V123L153 99V214H184V27;M59 27V193L153 99V214H184V27"
+    dur="1s"
+    repeatCount="indefinite"
+    repeatDur="7s"
+    begin="click"
+    id="jopa"
+    restart="whenNotActive"
+  />
+
+  <animate
+    attributeName="d"
+    href="#loh"
+    values="M59 27V193L153 99V214H184V27;M5 27V123L153 99V214H184V27;M5 7V193L153 99V214H184V27"
+    dur="2s"
+    begin="jopa.end"
+    id="kaka"
+    restart="whenNotActive"
+  />
+
+  <animate
+    attributeName="stroke-width"
+    href="#loh"
+    values="3;5;10"
+    dur="3s"
+    begin="kaka.end"
+    fill="freeze"
+    end="click"
+    keyTimes="0; 0.9; 1"
+    keySplines=".25 .1 .25 1;
+                0   0  .58 1"
+    calcMode="spline"
+    restart="whenNotActive"
+  />
+
+
+</svg>

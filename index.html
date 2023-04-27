@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+<svg class="suka" width="242" height="242" viewBox="0 0 242 242" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M59 27V193L153 99V214H184V27" stroke="black" stroke-width="3" id="loh"/>
+
+<animate 
+attributeName="d"
+href="#loh"
+values="M59 27V193L153 99V214H184V27;M5 27V123L153 99V214H184V27;M59 27V193L153 99V214H184V27"
+dur="1s"
+repeatCount="indefinite"
+repeatDur="7s"
+begin="click"
+id="jopa"
+restart="whenNotActive"
+/>
+
+<animate 
+attributeName="d"
+href="#loh"
+values="M59 27V193L153 99V214H184V27;M5 27V123L153 99V214H184V27;M5 7V193L153 99V214H184V27"
+dur="2s"
+begin="jopa.end"
+id="kaka"
+restart="whenNotActive"
+/>
+
+<animate 
+attributeName="stroke-width"
+href="#loh"
+values="3;5;10"
+dur="3s"
+begin="kaka.end"
+fill="freeze"
+end="click"
+keyTimes="0; 0.9; 1"
+keySplines=".25 .1 .25 1;
+                0   0  .58 1"
+calcMode="spline"
+restart="whenNotActive"
+/>
+
+
+
+</svg>
+
+
+<svg width="242" height="242" fill="none" viewBox="0 0 242 242" xmlns="http://www.w3.org/2000/svg">
+  <circle fill="red" cx="100" cy="100"  r="55" stroke="black" stroke-width="1" x="">
+  <animate 
+attributeName="r"
+from="0"
+to="100"
+dur="0.5s"
+fill="freeze"
+begin="1s; 5s; 9s;click"
+restart="whenNotActive"
+
+keyTimes="0; 1"
+keySplines=".25 .1 .25 1;"
+calcMode="spline"
+/>
+</circle>
+
+</svg>
+
+<svg width="242" height="242" fill="none" viewBox="0 0 242 242" xmlns="http://www.w3.org/2000/svg">
+  <circle fill="red" cx="100" cy="100"  r="10" stroke="black" stroke-width="1" x="">
+  <animate 
+attributeName="r"
+by="4" 
+repeatCount="indefinite"
+repeatDur="4s"
+accumulate="sum"
+dur="0.2s"
+fill="freeze"
+/>
+</circle>
+
+</svg>
+
+
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path id="jija" d="M103 12L188 12L188 97M92 188L12 188L12 108" stroke="#489EDC" stroke-width="2"/>
+
+<animate
+attributeName="d"
+href="#jija"
+dur="2s"
+repeatCount="indefinite"
+values="M103 12L188 12L188 12L188 97M92 188L12 188L12 188L12 108;
+M188 12L188 12L188 188L188 188M12 188L12 188L12 12L12 12;
+M188 103L188 188L188 188L103 188M12 103L12 12L12 12L103 12;
+M188 188L188 188L12 188L12 188M12 12L12 12L188 12L188 12;
+M92 188L12 188L12 188L12 108M103 12L188 12L188 12L188 97;
+"
+/>
+
+
+</svg>
+
+
+<svg width="200" height="200"><use href="sprite.svg#4"></use></svg>
+<img src="Vector 20.svg" alt="">
+<object data="Frame 189.svg" type="image/svg+xml"></object>
+
+<style>
+#jija {
+  stroke: green; 
+}
+</style>
+</body>
+</html>
